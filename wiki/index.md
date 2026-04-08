@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Last updated: 2026-04-08
+> Last updated: 2026-04-09
 
 ## Overview
 
@@ -8,7 +8,16 @@ This index catalogs all pages in the wiki. Updated on every ingest.
 
 ## Pages
 
-*No pages yet. Start by ingesting your first source.*
+### Concepts
+
+- [[three-layer-architecture]] — LLM Wiki organizational model
+- [[llm-wiki]] — persistent compounding knowledge base pattern
+- [[rag-vs-llm-wiki]] — comparison of RAG vs LLM Wiki approaches
+- [[oh-my-codex]] — multi-agent orchestration for OpenAI Codex CLI
+
+### Sources
+
+*None yet.*
 
 ---
 
