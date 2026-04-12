@@ -20,6 +20,17 @@ schema/     ← Configuration — structure, conventions, workflows
 | **Query** | Search wiki → synthesize answer with citations → optionally write back as new page |
 | **Lint** | Check contradictions, orphans, stale claims, missing cross-refs, data gaps |
 
+## Frontend
+
+The repository now includes a static frontend build for GitHub Pages.
+
+- `npm install`
+- `npm run build` to generate `dist/`
+- `npm run preview` to serve the generated site locally at `http://127.0.0.1:4173`
+- `.github/workflows/deploy-pages.yml` deploys `dist/` from `main`
+
+Architecture notes, inspiration references, and content assumptions live in [docs/frontend.md](docs/frontend.md).
+
 ## Why this works
 
 > "Humans abandon wikis because the maintenance burden grows faster than the value. LLMs don't get bored."
