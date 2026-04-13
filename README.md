@@ -27,6 +27,7 @@ The repository now includes a static frontend build for GitHub Pages.
 - `npm install`
 - `npm run build` to generate `dist/`
 - `npm run preview` to serve the generated site locally at `http://127.0.0.1:4173`
+- `npm run test:e2e` to run the Playwright smoke test against the local preview server
 - `.github/workflows/deploy-pages.yml` deploys `dist/` from `main`
 
 Architecture notes, inspiration references, and content assumptions live in [docs/frontend.md](docs/frontend.md).

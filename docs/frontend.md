@@ -33,6 +33,7 @@ These projects informed the direction, but rara-wiki intentionally keeps a narro
 - `scripts/preview.mjs`: simple local static preview server
 - `site/site.css`: layout, theming, responsive design, and typography
 - `site/site.js`: theme toggle and client-side search
+- `tests/wiki.spec.js`: Playwright smoke coverage for search, wikilinks, backlinks, and theme persistence
 - `.github/workflows/deploy-pages.yml`: build and deployment workflow for GitHub Pages
 
 ## Content assumptions
@@ -41,3 +42,8 @@ These projects informed the direction, but rara-wiki intentionally keeps a narro
 - Tags come from frontmatter
 - Source links in frontmatter can be URLs or paths to markdown pages inside the repo
 - `wiki/log.md` acts as the recent updates stream surfaced in the UI
+
+## Verification
+
+- `npm run build` verifies the static site generator output
+- `npm run test:e2e` runs a browser smoke test with Playwright against the preview server
