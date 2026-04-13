@@ -1,0 +1,19 @@
+{
+  "name": "rara-wiki-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && node scripts/preview.mjs",
+    "preview": "node scripts/preview.mjs",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
