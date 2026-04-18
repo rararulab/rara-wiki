@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# Generated MkDocs artifacts
+mkdocs.yml
+mkdocs_docs/
+site/
+

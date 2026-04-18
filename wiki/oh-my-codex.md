@@ -3,14 +3,16 @@ title: oh-my-codex (OMX)
 tags: [concept, agent-orchestration, codex, openai]
 date: 2026-04-09
 sources:
-  - https://github.com/Yeachan-Heo/oh-my-codex
-  - https://yeachan-heo.github.io/oh-my-codex-website
-status: stable
+  - raw/agent-tools/2026-04-09-oh-my-codex-source-card.md
+status: needs-review
 ---
 
 # oh-my-codex (OMX)
 
-Multi-agent orchestration layer for OpenAI Codex CLI. 18.9k stars, 1.8k forks, 1,431 commits since Feb 2026. The Rust rewrite `ultraworkers/claw-code` reached 178k stars in under a month — the fastest repo in history to surpass 100K.
+Multi-agent orchestration layer for OpenAI Codex CLI. This page was created from an
+earlier ingest and now has a local traceability card, but time-sensitive repository
+metrics still need a fresh upstream refresh before use. Source:
+`raw/agent-tools/2026-04-09-oh-my-codex-source-card.md`.
 
 > **Core premise**: OMX does not replace Codex. It adds a better working layer around it — better task routing, better workflow, better runtime.
 
@@ -120,10 +122,10 @@ MCP servers solve the context window limitation — state lives external, pulled
 
 ## Ecosystem
 
-- **claw-code** (178k stars) — Rust rewrite, fork of OMX, "the fastest repo in history to surpass 100K stars"
-- **scalarian/oh-my-codex** (45 stars, MIT) — topics: agent-framework, ai-orchestration, mcp, codex-cli
-- **chiragjoshi12/claude-code** (180 stars) — Python port of Claude Code using OMX, "educational purpose only"
-- Multiple InstructKR variants, Windows portable, Langfuse integration
+The earlier ingest noted related projects and ports, but those references are stale until
+refreshed from upstream. Keep the architectural notes above, and refresh source metrics or
+ecosystem claims before relying on them. Source:
+`raw/agent-tools/2026-04-09-oh-my-codex-source-card.md`.
 
 ## Relevant Patterns
 

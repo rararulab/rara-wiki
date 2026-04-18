@@ -9,6 +9,10 @@ Configuration and conventions for Rara's LLM Wiki. Co-evolved by Rara and the us
 | `raw/` | User / Rara (fetch only) | Immutable after creation |
 | `wiki/` | Rara | Fully mutable — Rara creates, updates, reorganizes |
 | `schema/` | Co-evolved | Updated by agreement |
+| `tools/` | Rara | Verification tooling |
+
+The root `AGENTS.md` is the executable entry contract for agents. `schema/AGENT_HARNESS.md`
+defines the BMAD-inspired workflow that agents follow before editing the wiki.
 
 ## Page Naming
 
@@ -62,6 +66,17 @@ status: draft | stable | needs-review
    - Flagged: contradiction between page-d and page-e
    ```
 
+## Conversation Workflow
+
+Use this when the conversation itself produces durable knowledge.
+
+1. **Capture**: Save a dated note to `raw/conversations/{date}-{slug}.md`
+2. **Distill**: Extract stable preferences, decisions, definitions, conclusions, and
+   workflow changes
+3. **Write back**: Update existing wiki pages or create a new synthesis/concept page
+4. **Update index**: List any new page in `wiki/index.md`
+5. **Append log**: Add a `conversation` entry to `wiki/log.md`
+
 ## Query Workflow
 
 1. **Read index**: Start with `wiki/index.md` to find relevant pages
@@ -93,3 +108,4 @@ Output: a lint report. Auto-fix what's safe (index drift, missing cross-refs). F
 - Every page should have at least one inbound cross-reference (no orphans)
 - Frontmatter must be complete and accurate
 - Contradictions are explicitly flagged, not silently resolved
+- Before reporting a file-changing task complete, run `python3 tools/wiki_lint.py`
