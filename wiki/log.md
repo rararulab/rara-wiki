@@ -94,3 +94,10 @@
 - Updated `wiki/index.md` to mirror the grouped concept navigation and include the new conversation source
 - Added `.github/workflows/verify.yml` to run `make verify` on pull requests and pushes to `main`
 - Updated `README.md`, `AGENTS.md`, and `wiki/github-pages-site.md`
+
+---
+
+## [2026-04-18] publishing | make verify compatible with CI runners without uv
+
+- Updated `Makefile` so `build-site` uses `uv tool run` when `uv` exists and falls back to the active Python environment otherwise
+- Confirmed `make verify` works in a no-`uv` virtualenv with `mkdocs-terminal` installed
