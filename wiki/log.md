@@ -101,3 +101,12 @@
 
 - Updated `Makefile` so `build-site` uses `uv tool run` when `uv` exists and falls back to the active Python environment otherwise
 - Confirmed `make verify` works in a no-`uv` virtualenv with `mkdocs-terminal` installed
+
+---
+
+## [2026-04-18] conversation | CEX wallet system learning
+
+- Captured the tutoring session in `raw/conversations/2026-04-18-cex-wallet-system-learning.md`
+- Created `wiki/cex-wallet-system.md`
+- Updated `wiki/index.md` with the new architecture concept and conversation source
+- Distilled durable conclusions around: internal ledger vs on-chain settlement, dual state machines, withdrawal object model, settlement boundary, retryable vs terminal failure, sweep vs rebalancing, wallet tiers, and BTC vs EVM adapter differences

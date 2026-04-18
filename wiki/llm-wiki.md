@@ -32,4 +32,4 @@ This repo implements the pattern with [[three-layer-architecture]]:
 
 - [[rag-vs-llm-wiki]]
 - [[agent-harness]]
-
+- [[cex-wallet-system]]
